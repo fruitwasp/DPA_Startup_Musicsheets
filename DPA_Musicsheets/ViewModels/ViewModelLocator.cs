@@ -17,6 +17,8 @@ namespace DPA_Musicsheets.ViewModels
             SimpleIoc.Default.Register<LilypondViewModel>();
             SimpleIoc.Default.Register<StaffsViewModel>();
             SimpleIoc.Default.Register<MidiPlayerViewModel>();
+
+            SimpleIoc.Default.Register<PlayerViewModel>();
         }
 
         public MainViewModel MainViewModel
@@ -48,6 +50,14 @@ namespace DPA_Musicsheets.ViewModels
             get
             {
                 return ServiceLocator.Current.GetInstance<MidiPlayerViewModel>();
+            }
+        }
+
+        public PlayerViewModel PlayerViewModel
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<PlayerViewModel>();
             }
         }
 

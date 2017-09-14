@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DPA_Musicsheets.Models
 {
-    public class Note : BaseNote {
+    public class ToneNote : Notee {
 
-        public enum Pitch { get; set; }
+        public enum Pitch { }
 
-        public bool Direction { get; set }
+        public bool Direction { get; set; }
     }
 }

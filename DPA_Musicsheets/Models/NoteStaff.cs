@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +8,8 @@ namespace DPA_Musicsheets.Models
 {
     public class NoteCollection {
 
-        public bool Begin { get; set; }
+        public int Repetitions { get; set; }
 
-        public bool End { get; set; }
-
-        public List<Note> notes { get; set; }
+        public List<Notee> notes { get; set; }
     }
 }
