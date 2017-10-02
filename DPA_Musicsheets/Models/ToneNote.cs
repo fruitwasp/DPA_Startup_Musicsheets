@@ -8,8 +8,8 @@ namespace DPA_Musicsheets.Models
 {
     public class ToneNote : Notee {
 
-        public enum Pitch { }
+        public NotePitchType Pitch { get; set; }
 
-        public bool Direction { get; set; }
+        public NoteSignType Sign { get; set; }
     }
 }

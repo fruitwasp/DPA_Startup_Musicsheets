@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DPA_Musicsheets.Managers.FileHandlers
 {
-    class MidiFileHandler : FileHandlerInterface
+    class LilypondFileHandler : FileHandlerInterface
     {
         public Sheet Read(string filePath)
         {

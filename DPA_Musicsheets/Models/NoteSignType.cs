@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace DPA_Musicsheets.Models
 {
-    public class Notee
+    public enum NoteSignType
     {
-        public int Duration { get; set; }
-
-        public int Point { get; set; }
+        FLAT_SIGN, SHARP_SIGN
     }
 }

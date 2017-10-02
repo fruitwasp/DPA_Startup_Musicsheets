@@ -105,17 +105,23 @@
     </ApplicationDefinition>
     <Compile Include="Factories\FileHandlerFactory.cs" />
     <Compile Include="Managers\FileHandlers\FileHandlerInterface.cs" />
+    <Compile Include="Managers\FileHandlers\LilypondFileHandler.cs" />
     <Compile Include="Managers\FileHandlers\MidiFileHandler.cs" />
     <Compile Include="Managers\MidiSequenceEventArgs.cs" />
     <Compile Include="Managers\WPFStaffsEventArgs.cs" />
     <Compile Include="Managers\LilypondEventArgs.cs" />
     <Compile Include="Messages\CurrentStateMessage.cs" />
     <Compile Include="Managers\FileHandler.cs" />
+    <Compile Include="Models\Bar.cs" />
     <Compile Include="Models\LilypondToken.cs" />
     <Compile Include="Models\LilypondTokenKind.cs" />
     <Compile Include="Models\Notee.cs" />
-    <Compile Include="Models\NoteStaff.cs" />
-    <Compile Include="Models\PitchType.cs" />
+    <Compile Include="Models\NoteSignType.cs" />
+    <Compile Include="Models\Signature.cs" />
+    <Compile Include="Models\Staff.cs" />
+    <Compile Include="Models\NoteType.cs" />
+    <Compile Include="Models\NotePitchType.cs" />
+    <Compile Include="Models\Sheet.cs" />
     <Compile Include="Models\ToneNote.cs" />
     <Compile Include="ViewModels\MidiPlayerViewModel.cs" />
     <Compile Include="ViewModels\PlayerViewModel.cs" />

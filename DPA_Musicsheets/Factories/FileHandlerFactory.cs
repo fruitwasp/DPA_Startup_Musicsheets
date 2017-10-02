@@ -9,15 +9,22 @@ namespace DPA_Musicsheets.Factories
 {
     public class FileHandlerFactory
     {
+        private readonly static Dictionary<string, Type> _fileHandlers = new Dictionary<string, Type>
+        {
+            { "", typeof(MidiFileHandler) },
+            { "", typeof(LilypondFileHandler) }
+        };
+
         FileHandlerInterface createFromFileExtension(string fileExtension)
         {
-            switch (fileExtension)
+            Type classType = null;
+
+            if (_fileHandlers.TryGetValue(fileExtension, out classType))
             {
-                case ".mid":
-                    return new MidiFileHandler();
+                return (FileHandlerInterface) Activator.CreateInstance(classType);
             }
 
-            return null;
+            throw new ArgumentException("Unsupported file extension " + fileExtension);
         }
     }
 }

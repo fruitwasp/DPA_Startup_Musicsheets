@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace DPA_Musicsheets.Models
 {
-    public class Notee
+    public class Bar
     {
-        public int Duration { get; set; }
+        // public int Repetitions { get; set; }
 
-        public int Point { get; set; }
+        public List<Notee> Notes { get; set; }
+
+        public Signature Signature { get; set; }
     }
 }

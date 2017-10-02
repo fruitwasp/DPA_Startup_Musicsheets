@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace DPA_Musicsheets.Models
 {
-    public class Notee
-    {
-        public int Duration { get; set; }
+    public class Staff {
 
-        public int Point { get; set; }
+        public List<Bar> Bars { get; set; }
     }
 }

@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace DPA_Musicsheets.Models
 {
-    public class NoteCollection {
-
-        public int Repetitions { get; set; }
-
-        public List<Notee> notes { get; set; }
+    public enum NotePitchType {
+        C, D, E, F, G, A, B
     }
 }
