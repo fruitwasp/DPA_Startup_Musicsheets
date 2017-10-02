@@ -1,4 +1,4 @@
-﻿using DPA_Musicsheets.Managers.FileHandlers;
+using DPA_Musicsheets.Managers.FileHandlers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +11,8 @@ namespace DPA_Musicsheets.Factories
     {
         private readonly static Dictionary<string, Type> _fileHandlers = new Dictionary<string, Type>
         {
-            { "", typeof(MidiFileHandler) },
-            { "", typeof(LilypondFileHandler) }
+            { "mid", typeof(MidiFileHandler) },
+            { "ly", typeof(LilypondFileHandler) }
         };
 
         FileHandlerInterface createFromFileExtension(string fileExtension)
